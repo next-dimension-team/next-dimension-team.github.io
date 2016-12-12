@@ -20,6 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
     <!-- Theme CSS -->
     <link href="css/agency.min.css" rel="stylesheet">
@@ -97,6 +98,57 @@
             </div>
         </div>
     </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Plán projektu</h2>
+                    <h3 class="section-subheading text-muted"> </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 style="font-size:180%;">Zimný semester</h4>
+                    <table class="table">
+                    <thead class="thead-default">
+                      <tr>
+                        <th>Úloha</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td scope="row" class="col-md-10">Vytvorenie serverovej časti aplikácie s databázou na ukladanie diagramov</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-md-10">Vypracovania fyzického modelu z metamodelu sekvenčného diagramu</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-md-10">Vytvorenie frontendovej časti aplikácie v AngularJS.</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-md-10">Vytvorenie JSON API komunikácie medzi frontendom a beckendom</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-md-10">Vytvorenie komponentov pre vykresľovanie elementov sekvenčného diagramu.</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                      <tr>
+                        <td scope="row" class="col-md-10">Načítanie uložených diagramov v databáze na frontend.</td>
+                        <td class="col-md-2"> <span style="color:green" class="glyphicon glyphicon-ok" aria-hidden="true"> </span></td>
+                      </tr>
+                    </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Portfolio Grid Section -->
     <section id="documents" class="bg-light-gray">
         <div class="container">
@@ -165,20 +217,30 @@
                     </table>
                 </div>
                 <div class="col-xs-6">
-                    <h4 style="font-size:180%;">Dokumentácia</h4>
+                    <h4 style="font-size:180%;">Dokumentácia k šprintom</h4>
                     <table class="table">
                     <thead class="thead-default">
                       <tr>
                         <th>Šprint</th>
-                        <th>Dokumentácia</th>
-                        <th>Export - JIRA</th>
+                        <th>Retrospektíva</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
                         <th scope="row">1.šprint</th>
-                        <td><a href="" style="color:blue">dokumentácia</a></td>
-                        <td><a href="documents/jira_exports/jira_sprint1.pdf" style="color:blue">export</a></td>
+                        <td><a href="documents/retrospektiva1.pdf" style="color:blue">retrospektíva</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2.šprint</th>
+                        <td><a href="retrospektiva2.pdf" style="color:blue">retrospektíva</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3.šprint</th>
+                        <td><a href="documents/retrospektiva3.pdf" style="color:blue">retrospektíva</a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">4.šprint</th>
+                        <td><a href="documents/retrospektiva4.pdf" style="color:blue">retrospektíva</a></td>
                       </tr>
                     </tbody>
                     </table>
@@ -235,52 +297,94 @@
                     <div class="team-member">
                         <img src="img/team/mato.jpg" class="img-circle" height="250" width="250">
                         <h4>Matej Víťaz</h4>
-                        <p class="text-muted">Vedúci tímu a development</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Vedúci tímu</span>
+                            <br>
+                            Rád kódi hocičo webové, backend či frontend. Najlepšie z tímu ovláda AngularJS, a to využíva aj v tímovom projekte. Taktiež ovláda PHP a iné webové jazyky.
+                        </p>
+                        <span class="devicon-php-plain colored" style="font-size:300%"></span>
+                        <span class="devicon-angularjs-plain colored" style="font-size:300%"></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/ruby.jpg" class="img-circle" height="250" width="250">
                         <h4>Ľubomír Jesze</h4>
-                        <p class="text-muted">Head development</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Manažér vývoja a integrácie</span>
+                            <br>
+                            Baví ho hlavne development webových aplikácií v PHP a frameworku Laravel. Taktiež vie takmer všetko o Githube a stará sa o tímový repozitár a poriadok v kóde.
+                        </p>
+                        <span class="devicon-laravel-plain-wordmark colored" style="font-size:300%"></span>
+                        <span class="devicon-php-plain colored" style="font-size:300%"></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/luky.jpg" class="img-circle"  height="250" width="250">
                         <h4>Lukáš Skala</h4>
-                        <p class="text-muted">Plánovanie</p>
+                         <p class="text-muted"> 
+                            <span class="label label-default">Manažér plánovania</span>
+                            <br>
+                            Programuje hlavne v jazykoch Java a C#. Zaujíma sa o tvorbu webových aplikácí v Jave, čo využíva aj v práci.                        
+                        </p>
+                        <span class="devicon-java-plain-wordmark colored" style="font-size:300%"></span>
                     </div>
                 </div>
+                </div>
+                <div class="row">
                  <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/zajo.jpg" class="img-circle" height="250" width="250">
                         <h4>Peter Zajac</h4>
-                        <p class="text-muted">Test a kvalita</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Manažér testovania</span>
+                            <br>
+                            Programuje hlavne v jazyku Java, začína taktiež s webovými technológiami.                                                                                              
+                        </p>
+                        <span class="devicon-java-plain-wordmark colored" style="font-size:300%"></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/zilo.jpg"  class="img-circle" height="250" width="250">
                         <h4>Dominik Žilka</h4>
-                        <p class="text-muted">Scrum master a komunikácia</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Manažér komunikácie</span>
+                            <br>
+                            Najradšej má procedurálne programovanie v jazyku C a vylepšovanie algortimov v tomto jazyku.
+
+                        </p>
+                        <span class="devicon-c-plain colored" style="font-size:300%"></span>
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
                         <img src="img/team/matus.jpg" class="img-circle" height="250" width="250">
                         <h4>Matúš Gáspar</h4>
-                        <p class="text-muted">Dokumentácia a code review</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Manažér dokumentácie</span>
+                            <br>
+                            Pri svojej bakalárskej práci sa naučil programovať v jazyku R.                                              
+                        </p>
+                        <span class="devicon-java-plain-wordmark colored" style="font-size:300%"></span>
                     </div>
                 </div>
+                </div>
+                <div class="row">
                 <div class="col-sm-4 col-md-offset-4">
                     <div class="team-member">
                         <img src="img/team/jakub.jpg" class="img-circle" alt="" height="250" width="250">
                         <h4>Jakub Minárik</h4>
-                        <p class="text-muted">Databázový špecialista</p>
+                        <p class="text-muted"> 
+                            <span class="label label-default">Manažér rizík</span>
+                            <br>
+                            Jeho odborom sú databázové technológie, a to využíva aj v práci, aj v tímaku.
+                        </p>
+                        <span class="devicon-postgresql-plain-wordmark colored" style="font-size:300%"></span>
                     </div>
                 </div>
-            </div>
+                </div>
         </div>
     </section>
 
@@ -291,7 +395,7 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Kontakt</h2>
                     <h3 class="section-subheading text-muted" style="color: white">Kontaktujte nás prioritne pomocou e-mailu.</h3>
-                    <h4 style="font-size:180%; color:white;"><a class="__cf_email__" href="/cdn-cgi/l/email-protection" data-cfemail="c4aaa1bcb0e9a0ada9a1aab7adabaae9b0a1a5a984a3ababa3a8a1a3b6abb1b4b7eaa7aba9">[email&#160;protected]</a><script data-cfhash='f9e31' type="text/javascript">/* <![CDATA[ */!function(t,e,r,n,c,a,p){try{t=document.currentScript||function(){for(t=document.getElementsByTagName('script'),e=t.length;e--;)if(t[e].getAttribute('data-cfhash'))return t[e]}();if(t&&(c=t.previousSibling)){p=t.parentNode;if(a=c.getAttribute('data-cfemail')){for(e='',r='0x'+a.substr(0,2)|0,n=2;a.length-n;n+=2)e+='%'+('0'+('0x'+a.substr(n,2)^r).toString(16)).slice(-2);p.replaceChild(document.createTextNode(decodeURIComponent(e)),c)}p.removeChild(t)}}catch(u){}}()/* ]]> */</script></h4>
+                    <h4 style="font-size:180%; color:white;">next-dimension-team@googlegroups.com</h4>
                 </div>
             </div>
         </div>
